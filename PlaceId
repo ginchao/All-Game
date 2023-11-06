@@ -1,0 +1,17 @@
+if game.PlaceId==7258239416 or game.PlaceId==4587545091 then --VietNamPiece    
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()      
+    elseif game.PlaceId==662417684 then --LuckyBlockBattleGround    
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/LuckyBlockBattleground/main/HttVeg'))()    
+    elseif game.PlaceId==14281307196 then --AUT:Old Universe   
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/OUT-OLD-UNIVERSE/main/UNIVERSE%20OLD" ,true))()    
+    elseif game.PlaceId==8534845015 then  --Sakura Stand  
+ loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Sakura-Stand/main/ST'))()    
+  elseif game.PlaceId == 14288176792 then --ConDL Piece 
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/ConDL-Piece/main/First%20Sea"))()   
+ elseif game.PlaceId == 394506555 then --GulePiece 
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Test-Hub-X-Chos-Hub/main/Glue%20Piece"))()
+elseif game.PlaceId == 6381829480 then --King Legacy Sea 2
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/King-Legacy/main/Check%20Boss"))()
+    elseif not game.PlaceId ~= nil then   loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/TestHub/main/Universal'))() --Universal    
+    end
