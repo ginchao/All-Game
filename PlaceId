@@ -60,6 +60,12 @@ Body = HttpService:JSONEncode({
 }}
 })
 })
+ game.StarterGui:SetCore("SendNotification", {
+                 Title = "TestHub", 
+                 Text = "Hãy Chờ Hub Load Hoặc Báo Lỗi Trong Server Discord Nếu Hub Không Lên",
+                 Icon = "rbxassetid://7388383866", 
+                 Duration = 5
+             })  
 game.Players.PlayerAdded:Connect(function(Player)
  game.StarterGui:SetCore("SendNotification", {
                  Title = "TestHub", 
