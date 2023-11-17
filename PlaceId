@@ -63,16 +63,16 @@ Body = HttpService:JSONEncode({
 game.Players.PlayerAdded:Connect(function(Player)
  game.StarterGui:SetCore("SendNotification", {
                  Title = "TestHub", 
-                 Text = Player.Name.." Vừa Vào Server Của Bạn ",
-                 Icon = "rbxassetid://6409799523", 
+                 Text = Player.Name.." Đã Tham Gia Server ",
+                 Icon = "rbxassetid://7388383866", 
                  Duration = 5
              })  
 end)
 game.Players.PlayerRemoving:Connect(function(Player)
  game.StarterGui:SetCore("SendNotification", {
                  Title = "TestHub", 
-                 Text = Player.Name.." Vừa Thoát Khỏi Server",
-                 Icon = "rbxassetid://8677814109", 
+                 Text = Player.Name.." Đã Thoát Khỏi Server",
+                 Icon = "rbxassetid://7962732035", 
                  Duration = 5
              })  
 end)
