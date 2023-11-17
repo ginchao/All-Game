@@ -63,12 +63,19 @@ Body = HttpService:JSONEncode({
 game.Players.PlayerAdded:Connect(function(Player)
  game.StarterGui:SetCore("SendNotification", {
                  Title = "TestHub", 
-                 Text = Player.Name.." Vừa Vào Sever Của Bạn ",
+                 Text = Player.Name.." Vừa Vào Server Của Bạn ",
                  Icon = "rbxassetid://6409799523", 
                  Duration = 5
              })  
 end)
-
+game.Players.PlayerRemoving:Connect(function(Player)
+ game.StarterGui:SetCore("SendNotification", {
+                 Title = "TestHub", 
+                 Text = Player.Name.." Vừa Thoát Khỏi Server",
+                 Icon = "rbxassetid://8677814109", 
+                 Duration = 5
+             })  
+end)
 if game.PlaceId==7258239416 or game.PlaceId==4587545091 then --VietNamPiece    
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()      
     elseif game.PlaceId==662417684 then --LuckyBlockBattleGround    
