@@ -60,7 +60,14 @@ Body = HttpService:JSONEncode({
 }}
 })
 })
-
+game.Players.PlayerAdded:Connect(function(Player)
+ game.StarterGui:SetCore("SendNotification", {
+                 Title = "TestHub", 
+                 Text = Player.Name.." Vừa Vào Sever Của Bạn ",
+                 Icon = "rbxassetid://6409799523", 
+                 Duration = 5
+             })  
+end)
 
 if game.PlaceId==7258239416 or game.PlaceId==4587545091 then --VietNamPiece    
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()      
