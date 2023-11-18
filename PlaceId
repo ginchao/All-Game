@@ -3,6 +3,16 @@ repeat wait() until AutoExec:IsLoaded();
 if not AutoExec:IsLoaded() then
     AutoExec.Loaded:Wait();
 end
+local Anh_Gai_Alimi = {"rbxassetid://6942501524","rbxassetid://7903531742","rbxassetid://7903522083","rbxassetid://6409799523","rbxassetid://8881175113",
+		"rbxassetid://7584008919","rbxassetid://6271530098","rbxassetid://7388383866","rbxassetid://7962732035","rbxassetid://6842416695","rbxassetid://6576447146",
+		"rbxassetid://10171317457","rbxassetid://10171317457","rbxassetid://8598068647","rbxassetid://8192162908","rbxassetid://8677814109","rbxassetid://4597457883"
+	
+game.StarterGui:SetCore("SendNotification", {
+                 Title = "TestHub", 
+                 Text = "Hãy Chờ Hub Load Hoặc Báo Lỗi Trong Server Discord Nếu Hub Không Lên",
+                 Icon = Anh_Gai_Alimi[math.random(1,#Anh_Gai_Alimi)], 
+                 Duration = 4
+             })  
 -- // Anti afk V2 \\--
 task.spawn(function()
     if game.PlaceId ~= 9821272782 then
@@ -60,17 +70,12 @@ Body = HttpService:JSONEncode({
 }}
 })
 })
- game.StarterGui:SetCore("SendNotification", {
-                 Title = "TestHub", 
-                 Text = "Hãy Chờ Hub Load Hoặc Báo Lỗi Trong Server Discord Nếu Hub Không Lên",
-                 Icon = "rbxassetid://10171317457", 
-                 Duration = 5
-             })  
+ 
 game.Players.PlayerAdded:Connect(function(Player)
  game.StarterGui:SetCore("SendNotification", {
                  Title = "TestHub", 
                  Text = Player.Name.." Đã Tham Gia Server ",
-                 Icon = "rbxassetid://7388383866", 
+                 Icon = Anh_Gai_Alimi[math.random(1,#Anh_Gai_Alimi)], 
                  Duration = 5
              })  
 end)
@@ -78,7 +83,7 @@ game.Players.PlayerRemoving:Connect(function(Player)
  game.StarterGui:SetCore("SendNotification", {
                  Title = "TestHub", 
                  Text = Player.Name.." Đã Thoát Khỏi Server",
-                 Icon = "rbxassetid://7962732035", 
+                 Icon = Anh_Gai_Alimi[math.random(1,#Anh_Gai_Alimi)], 
                  Duration = 5
              })  
 end)
