@@ -72,21 +72,21 @@ Body = HttpService:JSONEncode({
 })
 })
  
-game.Players.PlayerAdded:Connect(function(Player)
- game.StarterGui:SetCore("SendNotification", {
-                 Title = "TestHub", 
-                 Text = Player.Name.."🟢 Has Join The Game",
-                 Icon = Anh_Gai_Alimi[math.random(1,#Anh_Gai_Alimi)], 
-                 Duration = 5
-             })  
+game:GetService("Players").PlayerAdded:Connect(function(Player)
+             game.StarterGui:SetCore("SendNotification", { 
+                 Title = "Test Hub!", 
+                 Text = "🟢 "..Player.Name.." Has Join The Game",
+                 Icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..Player.UserId.."&width=100&height=100&format=png",
+                 Duration = 4
+             }) 
 end)
-game.Players.PlayerRemoving:Connect(function(Player)
- game.StarterGui:SetCore("SendNotification", {
-                 Title = "TestHub", 
-                 Text = Player.Name.."🔴 Has Left The Game  ",
-                 Icon = Anh_Gai_Alimi[math.random(1,#Anh_Gai_Alimi)], 
-                 Duration = 5
-             })  
+game:GetService("Players").PlayerRemoving:Connect(function(Player)
+             game.StarterGui:SetCore("SendNotification", { 
+                 Title = "Test Hub!", 
+                 Text = "🟢 "..Player.Name.." Has Join The Game",
+                 Icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..Player.UserId.."&width=100&height=100&format=png",
+                 Duration = 2
+             }) 
 end)
 if game.PlaceId==7258239416 or game.PlaceId==4587545091 then --VietNamPiece    
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()      
