@@ -73,7 +73,7 @@ Body = HttpService:JSONEncode({
 })
  local stop = nil
 if game:GetService("CoreGui").RobloxGui.Modules.Server.ServerPlayer:FindFirstChild("Discord") then 
-stop:Disconnect() else
+stop:Disconnect() end
 stop = game:GetService("Players").PlayerAdded:Connect(function(Player)
              game.StarterGui:SetCore("SendNotification", { 
                  Title = "Test Hub!", 
@@ -90,7 +90,6 @@ stop = game:GetService("Players").PlayerRemoving:Connect(function(Player)
                  Duration = 2
              }) 
 end)
-end
 if game.PlaceId==7258239416 or game.PlaceId==4587545091 then --VietNamPiece    
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()      
     elseif game.PlaceId==662417684 then --LuckyBlockBattleGround    
