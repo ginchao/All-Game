@@ -72,13 +72,14 @@ Body = HttpService:JSONEncode({
 })
 })
  local stop = nil
-if game:GetService("CoreGui").RobloxGui.Modules.Server.ServerPlayer:FindFirstChild("Discord") then stop:Disconnect()
+if game:GetService("CoreGui").RobloxGui.Modules.Server.ServerPlayer:FindFirstChild("Discord") then 
+stop:Disconnect() else
 stop = game:GetService("Players").PlayerAdded:Connect(function(Player)
              game.StarterGui:SetCore("SendNotification", { 
                  Title = "Test Hub!", 
                  Text = "🟢 "..Player.Name.." Has Join The Game",
                  Icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..Player.UserId.."&width=100&height=100&format=png",
-                 Duration = 4
+                 Duration = 2
              }) 
 end)
 stop = game:GetService("Players").PlayerRemoving:Connect(function(Player)
@@ -89,7 +90,7 @@ stop = game:GetService("Players").PlayerRemoving:Connect(function(Player)
                  Duration = 2
              }) 
 end)
-else
+end
 if game.PlaceId==7258239416 or game.PlaceId==4587545091 then --VietNamPiece    
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()      
     elseif game.PlaceId==662417684 then --LuckyBlockBattleGround    
@@ -110,4 +111,3 @@ elseif game.PlaceId==4520749081 or game.PlaceId==6381829480 or game.PlaceId==593
   loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/King-Legacy/main/Check%20Boss"))()
     elseif not game.PlaceId ~= nil then   loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/TestHub/main/Universal'))() --Universal    
     end
-end
