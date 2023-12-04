@@ -71,7 +71,12 @@ Body = HttpService:JSONEncode({
 }}
 })
 })
+local add = Instance.new("Part") 
+add.Parent = workspace
+add.Name = "Testh"
+local test = game:GetService("Workspace"):FindFirstChild("Testh")
  local stop = nil
+if test then
 stop = game:GetService("Players").PlayerAdded:Connect(function(Player)
              game.StarterGui:SetCore("SendNotification", { 
                  Title = "Test Hub!", 
@@ -88,7 +93,9 @@ stop = game:GetService("Players").PlayerRemoving:Connect(function(Player)
                  Duration = 2
              }) 
 end)
-if stop then stop:Disconnect() end
+test:Destroy()
+stop:Disconnect()
+end
 if game.PlaceId==7258239416 or game.PlaceId==4587545091 then --VietNamPiece    
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()      
     elseif game.PlaceId==662417684 then --LuckyBlockBattleGround    
