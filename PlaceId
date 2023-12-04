@@ -71,14 +71,8 @@ Body = HttpService:JSONEncode({
 }}
 })
 })
-local add = Instance.new("Part") 
-add.Parent = workspace
-add.Name = "Testh"
-local test = game:GetService("Workspace"):FindFirstChild("Testh")
- local stop = nil
-if test then
-stop:Disconnect() end
-stop = game:GetService("Players").PlayerAdded:Connect(function(Player)
+
+game:GetService("Players").PlayerAdded:Connect(function(Player)
              game.StarterGui:SetCore("SendNotification", { 
                  Title = "Test Hub!", 
                  Text = "🟢 "..Player.Name.." Has Join The Game",
@@ -86,7 +80,7 @@ stop = game:GetService("Players").PlayerAdded:Connect(function(Player)
                  Duration = 2
              }) 
 end)
-stop = game:GetService("Players").PlayerRemoving:Connect(function(Player)
+game:GetService("Players").PlayerRemoving:Connect(function(Player)
              game.StarterGui:SetCore("SendNotification", { 
                  Title = "Test Hub!", 
                  Text = "🔴 "..Player.Name.." Has Left The Game",
