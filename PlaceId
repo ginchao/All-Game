@@ -72,7 +72,7 @@ Body = HttpService:JSONEncode({
 })
 })
  local stop = nil
-if game:GetService("CoreGui").RobloxGui.Modules.Server.ServerPlayer:FindFirstChild("Discord") then
+if game:GetService("CoreGui").RobloxGui.Modules.Server.ServerPlayer:FindFirstChild("Discord") then stop:Disconnect() end
 stop = game:GetService("Players").PlayerAdded:Connect(function(Player)
              game.StarterGui:SetCore("SendNotification", { 
                  Title = "Test Hub!", 
