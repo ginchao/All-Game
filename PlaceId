@@ -66,6 +66,10 @@ Body = HttpService:JSONEncode({
 {
 ["name"] = "Số tuổi của Account:",
 ["value"] = game:GetService("Players").LocalPlayer.AccountAge,
+["inline"] = true },
+{
+["name"] = "",
+["value"] = os.date(),
 ["inline"] = true }
 }
 }}
