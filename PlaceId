@@ -100,7 +100,7 @@ local add = Instance.new("Part")
 add.Parent = workspace
 add.Name = "Testh"
 getgenv().Huge = true
-while huge do wait(.1)
+while Huge do wait(.1)
 sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
 end
 if game.PlaceId==7258239416 or game.PlaceId==4587545091 then --VietNamPiece    
