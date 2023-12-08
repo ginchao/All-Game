@@ -120,7 +120,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Test-Hub-X-Ch
 elseif game.PlaceId==12453994319 then --RoFruit2
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Ro-Fruit-2/main/.Lua"))()
-elseif game.PlaceId==6381829480 or game.PlaceId==5931540094 or game.PlaceId==6596144663 then --King Legacy Sea 2
+elseif game.PlaceId==6381829480 or game.PlaceId==6596144663 then --King Legacy Sea 2
   loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/King-Legacy/main/Check%20Boss"))()
     elseif not game.PlaceId ~= nil then   loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/TestHub/main/Universal'))() --Universal    
     end
