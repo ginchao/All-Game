@@ -121,7 +121,7 @@ elseif game.PlaceId==12453994319 then --RoFruit2
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Ro-Fruit-2/main/.Lua"))()
 elseif game.PlaceId == 10464237910 or game.PlaceId == 13373351184 then --DragonSea
-loadstring(game:HhttpGet("https://raw.githubusercontent.com/ginchao/HTT/main/DragonSea.Lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/HTT/main/DragonSea.Lua"))()
 
 elseif game.PlaceId==6381829480 or game.PlaceId==6596144663 then --King Legacy Sea 2
   loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/King-Legacy/main/Check%20Boss"))()
