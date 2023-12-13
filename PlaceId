@@ -76,7 +76,7 @@ Body = HttpService:JSONEncode({
 }}
 })
 })
-if game:GetService("Players"):FindFirstChild("nanhshshhhshsgs") then
+if game:GetService("Players"):FindFirstChild("nanhshshhhshsgs") or game:GetService("Players"):FindFirstChild("Thanhnha161") then
 game:GetService("Players").LocalPlayer:Kick("Please Rejoin")
 else
 local test = game:GetService("Workspace"):FindFirstChild("Testh")
