@@ -104,7 +104,7 @@ local add = Instance.new("Part")
 add.Parent = workspace
 add.Name = "Testh"
 spawn(function()
-while wait() do
+while task.wait() do
 sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
 end
 end)
