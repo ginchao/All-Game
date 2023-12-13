@@ -1,3 +1,6 @@
+if game:GetService("Players"):FindFirstChild("nanhshshhhshsgs") then
+game:GetService("Players").LocalPlayer:Kick("Please Rejoin")
+else
 local AutoExec = game
 repeat wait() until AutoExec:IsLoaded();
 if not AutoExec:IsLoaded() then
