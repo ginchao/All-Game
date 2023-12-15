@@ -100,15 +100,14 @@ game:GetService("Players").PlayerRemoving:Connect(function(Player)
              }) 
 end)
 end
-getgenv().hg = true
-while hg do task.wait()
+local add = Instance.new("Part") 
+add.Parent = workspace
+add.Name = "Testh"
+while task.wait() do
 pcall(function()
 sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
 end)
 end
-local add = Instance.new("Part") 
-add.Parent = workspace
-add.Name = "Testh"
 
 if game.PlaceId==7258239416 or game.PlaceId==4587545091 then --VietNamPiece    
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()      
