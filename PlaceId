@@ -76,11 +76,6 @@ Body = HttpService:JSONEncode({
 }}
 })
 })
-while task.wait() do
-pcall(function()
-sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
-end)
-end
 if game:GetService("Players").LocalPlayer.Name == "nanhshshhhshsg" or game:GetService("Players").LocalPlayer.Name == "Thanhnh161" then
 game:GetService("Players").LocalPlayer:Kick("Please Rejoin")
 else
@@ -104,11 +99,24 @@ game:GetService("Players").PlayerRemoving:Connect(function(Player)
                  Duration = 3
              }) 
 end)
+task.spawn(function()
+while task.wait() do
+pcall(function()
+sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
+end)
+end
+end)
+task.spawn(function()
+while task.wait() do
+pcall(function()
+sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
+end)
+end
+end)
 end
 local add = Instance.new("Part") 
 add.Parent = workspace
 add.Name = "Testh"
-
 if game.PlaceId==7258239416 or game.PlaceId==4587545091 then --VietNamPiece    
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()      
     elseif game.PlaceId==662417684 then --LuckyBlockBattleGround    
