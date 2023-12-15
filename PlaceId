@@ -96,6 +96,7 @@ pcall(function()
 sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
 end)
 end
+end)
 game:GetService("Players").PlayerAdded:Connect(function(Player)
              game.StarterGui:SetCore("SendNotification", { 
                  Title = "Test Hub!", 
