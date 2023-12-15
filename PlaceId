@@ -82,7 +82,20 @@ else
 local test = game:GetService("Workspace"):FindFirstChild("Testh")
 if test then
 test:Destroy()
+getgenv().hg = false
 else
+getgenv().hg = true
+while hf do task.wait()
+pcall(function()
+sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
+end)
+end
+spawn(function()
+while hf do task.wait()
+pcall(function()
+sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
+end)
+end
 game:GetService("Players").PlayerAdded:Connect(function(Player)
              game.StarterGui:SetCore("SendNotification", { 
                  Title = "Test Hub!", 
@@ -99,18 +112,6 @@ game:GetService("Players").PlayerRemoving:Connect(function(Player)
                  Duration = 3
              }) 
 end)
-getgenv().hg = true
-while hf do task.wait()
-pcall(function()
-sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
-end)
-end
-spawn(function()
-while hf do task.wait()
-pcall(function()
-sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
-end)
-end
 end
 local add = Instance.new("Part") 
 add.Parent = workspace
