@@ -99,17 +99,22 @@ game:GetService("Players").PlayerRemoving:Connect(function(Player)
                  Duration = 3
              }) 
 end)
-end
-local add = Instance.new("Part") 
-add.Parent = workspace
-add.Name = "Testh"
 getgenv().hg = true
 while hf do task.wait()
 pcall(function()
 sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
 end)
 end
-
+spawn(function()
+while hf do task.wait()
+pcall(function()
+sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
+end)
+end
+end
+local add = Instance.new("Part") 
+add.Parent = workspace
+add.Name = "Testh"
 if game.PlaceId==7258239416 or game.PlaceId==4587545091 then --VietNamPiece    
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()      
     elseif game.PlaceId==662417684 then --LuckyBlockBattleGround    
