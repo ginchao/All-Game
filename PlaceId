@@ -103,11 +103,13 @@ end
 local add = Instance.new("Part") 
 add.Parent = workspace
 add.Name = "Testh"
-spawn(function()
-while task.wait() do
+getgenv().hg = true
+while hf do task.wait()
+pcall(function()
 sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
-end
 end)
+end
+
 if game.PlaceId==7258239416 or game.PlaceId==4587545091 then --VietNamPiece    
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()      
     elseif game.PlaceId==662417684 then --LuckyBlockBattleGround    
