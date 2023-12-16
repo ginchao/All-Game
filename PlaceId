@@ -106,13 +106,6 @@ sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
 end)
 end
 end)
-task.spawn(function()
-while task.wait() do
-pcall(function()
-sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
-end)
-end
-end)
 end
 local add = Instance.new("Part") 
 add.Parent = workspace
