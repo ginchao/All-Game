@@ -99,7 +99,7 @@ game:GetService("Players").PlayerRemoving:Connect(function(Player)
                  Duration = 3
              }) 
 end)
-task.spawn(function()
+spawn(function()
 while task.wait() do
 pcall(function()
 sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
