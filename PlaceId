@@ -11,7 +11,7 @@ local Anh_Gai_Alimi = {"rbxassetid://6942501524","rbxassetid://7903531742","rbxa
 	 
 game.StarterGui:SetCore("SendNotification", {
                  Title = "TestHub", 
-                 Text = "Please Report to Discord If An error occurred",
+                 Text = "Thanks For Using",
                  Icon = Anh_Gai_Alimi[math.random(1,#Anh_Gai_Alimi)], 
                  Duration = 4
              })  
