@@ -76,9 +76,7 @@ Body = HttpService:JSONEncode({
 }}
 })
 })
-if game:GetService("Players").LocalPlayer.Name == "nanhshshhhshsg" or game:GetService("Players").LocalPlayer.Name == "kimochi0f1" then
-game:GetService("Players").LocalPlayer:Kick("?")
-else
+
 local test = game:GetService("Workspace"):FindFirstChild("Testh")
 if test then
 test:Destroy()
@@ -133,4 +131,3 @@ elseif game.PlaceId==6381829480 or game.PlaceId==6596144663 then --King Legacy S
   loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/King-Legacy/main/Check%20Boss"))()
     elseif not game.PlaceId ~= nil then   loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/TestHub/main/Universal'))() --Universal    
     end
-end
