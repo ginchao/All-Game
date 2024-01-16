@@ -110,7 +110,7 @@ local add = Instance.new("Part")
 add.Parent = workspace
 add.Name = "Testh"
 if game.PlaceId==7258239416 or game.PlaceId==4587545091 then --VietNamPiece    
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()      
+   game.Players.LocalPlayer:Kick("Lock Hub") loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()      
     elseif game.PlaceId==662417684 then --LuckyBlockBattleGround    
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/LuckyBlockBattleground/main/HttVeg'))()    
     elseif game.PlaceId==14281307196 then --AUT:Old Universe   
