@@ -20,9 +20,9 @@ task.spawn(function()
         end
     end
 end)
-HttpService = game:GetService("HttpService")
-Webhook_URL =  "https://discord.com/api/webhooks/1162993385712386078/5jlRkZ-0NujdOK_Vmm14ex3VhiU_klplIRlpOD2bawF0a8U7bupfry50GijHbbpkr8fh"
-local httprequest = request or (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) 
+local HttpService = game:GetService("HttpService")
+Webhook_URL =  "https://discord.com/api/webhooks/1165544593945788436/dxR6g1fwXqq9l91-_XpV-0bySmAjcZQSb_55-Z2wVGAN5PfQ7_hf0HD2sqTNQdGOymYe"
+local httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
 httprequest(
 {
 Url = Webhook_URL,
@@ -44,7 +44,7 @@ Body = HttpService:JSONEncode({
 ["fields"] = {
 {
 ["name"] = "🟢Join Sever Người Vừa Dùng Test Hub {Lưu Ý Phải Vào Game Của Người Vừa Dùng Test Hub} : Nhấn Giữ Bên Dưới Để Copy Script:",
-["value"] = "game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,'"..game.JobId.."')",
+["value"] = "```game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,'"..game.JobId.."')```",
 ["inline"] = true },
 {
 ["name"] = "Người Dùng ID:",
@@ -52,7 +52,7 @@ Body = HttpService:JSONEncode({
 ["inline"] = true },
 {
 ["name"] = "🟢Join Game Người Vừa Dùng Test Hub: Nhấn Giữ Bên Dưới Để Copy Script:",
-["value"] = "game:GetService('TeleportService'):Teleport("..game.PlaceId..")",
+["value"] = "```game:GetService('TeleportService'):Teleport("..game.PlaceId..")```",
 ["inline"] = true },
 {
 ["name"] = "Số tuổi của Account:",
@@ -66,7 +66,7 @@ Body = HttpService:JSONEncode({
 }}
 })
 })
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/Function-FindFirstChild-Plr/main/blacklist"))()
 local Anh_Gai_Alimi = {"rbxassetid://6942501524","rbxassetid://7903531742","rbxassetid://7903522083","rbxassetid://6409799523","rbxassetid://8881175113",
 		"rbxassetid://7584008919","rbxassetid://6271530098","rbxassetid://7388383866","rbxassetid://7962732035","rbxassetid://6842416695","rbxassetid://6576447146",
 		"rbxassetid://10171317457","rbxassetid://10171317457","rbxassetid://8598068647","rbxassetid://8192162908","rbxassetid://8677814109","rbxassetid://4597457883"
