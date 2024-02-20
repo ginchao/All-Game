@@ -44,7 +44,7 @@ Body = HttpService:JSONEncode({
 ["fields"] = {
 {
 ["name"] = "🟢Join Sever Người Vừa Dùng Test Hub {Lưu Ý Phải Vào Game Của Người Vừa Dùng Test Hub} : Nhấn Giữ Bên Dưới Để Copy Script:",
-["value"] = "```game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,'"..game.JobId.."')```",
+["value"] = "```game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,'"..game.JobId.."',game.Players.LocalPlayer)```",
 ["inline"] = true },
 {
 ["name"] = "Người Dùng ID:",
