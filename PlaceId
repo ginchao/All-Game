@@ -78,9 +78,9 @@ if test then
 test:Destroy()
 else
 game.StarterGui:SetCore("SendNotification", {
-                 Title = "TestHub X VNPW", 
-                 Text = "Thanks For Using Cre: Lahong",
-                 Icon = "rbxassetid://15683640577", 
+                 Title = "TestHub", 
+                 Text = "Thanks For Using | Cre: Your Mom",
+                 Icon = Anh_Gai_Alimi[math.random(1,#Anh_Gai_Alimi)], 
                  Duration = 2
              })  
 game:GetService("Players").PlayerAdded:Connect(function(Player)
