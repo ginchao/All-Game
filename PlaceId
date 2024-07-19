@@ -99,13 +99,7 @@ game:GetService("Players").PlayerRemoving:Connect(function(Player)
                  Duration = 3
              }) 
 end)
-spawn(function()
-while wait() do
-pcall(function()
-sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius", math.huge)
-end)
-end
-end)
+
 end
 local add = Instance.new("Part") 
 add.Parent = workspace
