@@ -1,4 +1,4 @@
-
+ 
 local AutoExec = game
 repeat wait() until AutoExec:IsLoaded();
 if not AutoExec:IsLoaded() then
