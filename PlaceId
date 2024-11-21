@@ -5,7 +5,7 @@ if not AutoExec:IsLoaded() then
     AutoExec.Loaded:Wait();
 end
 
--- // Anti afk V2 \\--
+
 task.spawn(function()
     if game.PlaceId ~= 9821272782 then
         getgenv().Press = function(v)
